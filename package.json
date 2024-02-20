@@ -1,0 +1,15 @@
+{
+  "name": "crowos_discord",
+  "version": "1.0.0",
+  "description": "CrowOS_Discord is a discord bot that is made for a game inside of discord that can played with the discord bot.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "CrowOS_Discord"
+  },
+  "author": "Licrovan",
+  "license": "ISC"
+}
