@@ -21,6 +21,15 @@ client.on('ready', (cl) => {
     console.log(`${cl.user.username} is up and running`)
 });
 
+client.on('interactionCreate', (interaction) => {
+
+    if (!interaction.isChatInputCommand()) return;
+    if (interaction.commandName === 'hello') {
+        interaction.reply(`fuck off i'm sleeping`)
+    }
+
+});
+
 client.on('messageCreate', (msg) => {
     if (msg.author.bot) {
         return;
