@@ -1,5 +1,3 @@
 module.exports = (client) => {
-
-    console.log(`${client.user.username}`)
-
+    console.log(`the bot ${client.user.username} is up and running`)
 };
