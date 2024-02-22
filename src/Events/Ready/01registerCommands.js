@@ -1,3 +1,4 @@
+const { Routes } = require('discord.js');
 const {testServer} = require('../../../config.json');
 const areCommandsDifferent = require('../../Utils/areCommandsDifferent');
 const getApplicationCommands = require('../../Utils/getAplicationCommands');
@@ -9,7 +10,7 @@ module.exports = async (client) => {
         const localCommands = getLocalCommands();
         const applicationCommands = await getApplicationCommands(
             client,
-            testServer
+            testServer,
           );
 
 
@@ -50,7 +51,7 @@ module.exports = async (client) => {
                     description,
                     options,
                 });
-
+                
                 console.log(`registering command "${name}"`);
             }
         }

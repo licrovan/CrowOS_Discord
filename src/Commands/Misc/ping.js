@@ -2,11 +2,13 @@ const  { ApplicationCommandOptionType, PermissionFlagsBits} = require('discord.j
 
 module.exports = {
     name: 'ping',
-    description: 'pong!',
-
-    permissionsRequired: [PermissionFlagsBits.Administrator],
-
+    description: 'Pong!',
+    // devOnly: Boolean,
+    testOnly: false,
+    // options: Object[],
+    // deleted: true,
+  
     callback: (client, interaction) => {
-        interaction.reply(`Pong! ${client.ws.ping} ms`)
+      interaction.reply(`Pong! ${client.ws.ping}ms`);
     },
-};
+  };
